@@ -1,0 +1,76 @@
+body{
+    font-family: Arial, sans-serif;
+    background: linear-gradient(120deg,#89f7fe,#66a6ff);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.wrapper{
+    width: 500px;
+}
+
+.form-box{
+    background: #fff;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+    overflow: hidden;
+}
+
+.progress-bar{
+    height: 6px;
+    background: #ddd;
+    margin-bottom: 20px;
+    border-radius: 3px;
+}
+
+.progress{
+    height: 100%;
+    width: 33%;
+    background: #4CAF50;
+    transition: 0.4s;
+}
+
+.step{
+    display: none;
+    flex-direction: column;
+}
+
+.step.active{
+    display: flex;
+    animation: slide 0.4s ease;
+}
+
+@keyframes slide{
+    from{transform: translateX(50px); opacity:0;}
+    to{transform: translateX(0); opacity:1;}
+}
+
+input, textarea{
+    margin: 8px 0;
+    padding: 8px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+}
+
+textarea{
+    resize: none;
+    height: 70px;
+}
+
+button{
+    margin-top: 10px;
+    padding: 8px;
+    border: none;
+    background: #4CAF50;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.btn-group{
+    display: flex;
+    justify-content: space-between;
+}

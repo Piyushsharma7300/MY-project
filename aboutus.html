@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>About Us</title>
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="aboutus.css">
+
+    <style>
+        .search-box{
+            margin-top:25px;
+            display:flex;
+            justify-content:center;
+        }
+        .search-box input{
+            width:300px;
+            padding:10px;
+            border:none;
+            border-radius:8px 0 0 8px;
+            outline:none;
+        }
+        .search-box button{
+            border-radius:0 8px 8px 0;
+            padding:10px 15px;
+            border:none;
+            background:#00bfff;
+            color:white;
+            cursor:pointer;
+        }
+        footer{
+            margin-top:30px;
+            background:rgba(0,0,0,0.6);
+            color:white;
+            padding:15px;
+            border-radius:10px;
+            text-align:center;
+            font-size:14px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="overlay">
+        <div class="form-container" style="max-width:700px; text-align:left;">
+            
+            <h1 style="text-align:center;">
+                <i class="fa-solid fa-circle-info"></i> About Us
+            </h1>
+
+            <p style="margin-top:20px; line-height:1.7; font-size:15px;">
+                Welcome to <strong>Lost & Found Portal</strong> — a platform created to help people
+                reconnect with their lost belongings in an easy and reliable way.
+            </p>
+
+            <p style="margin-top:15px; line-height:1.7; font-size:15px;">
+                This website was developed by <strong>Piyush sharma</strong>, a student of 
+                <strong>JECRC University</strong>, with the vision to solve a very common real-life problem.
+            </p>
+
+            <ul style="margin-left:20px; margin-top:10px; line-height:1.8;">
+                <li>Report lost items easily</li>
+                <li>Post found items to help others</li>
+                <li>Claim missing belongings</li>
+                <li>Connect people through a simple interface</li>
+            </ul>
+
+            <p style="margin-top:20px; text-align:center; font-weight:bold;">
+                “Reconnecting People With Their Lost Things”
+            </p>
+
+            <!-- 🔎 Search Bar -->
+            <div class="search-box">
+                <input type="text" id="lostSearch" placeholder="Search lost item (wallet, phone...)">
+                <button onclick="searchLostItem()">Search</button>
+            </div>
+
+            <!-- 🦶 Footer with contact -->
+            <footer>
+                <p><strong>Contact Developer</strong></p>
+                <p>Name: Piyush Sharma</p>
+                <p>Email: sharmapiyush3311@gmail.com</p>
+                <p>Phone: +916367236422</p>
+                <p>© 2026 Lost & Found Portal</p>
+            </footer>
+
+        </div>
+    </div>
+
+    <script>
+        function searchLostItem(){
+            const item = document.getElementById('lostSearch').value;
+            if(item.trim()===""){
+                alert("Please enter item name to search");
+            }else{
+                alert("Searching for: " + item + " (database connection later)");
+            }
+        }
+    </script>
+
+    <script src="aboutus.js"></script>
+</body>
+</html>

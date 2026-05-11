@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Claim Lost Item</title>
+    <link rel="stylesheet" href="claim.css">
+</head>
+<body>
+
+<div class="wrapper">
+    <div class="form-box">
+        <h2>Claim Lost Item</h2>
+
+        <div class="progress-bar">
+            <div class="progress"></div>
+        </div>
+
+        <form id="claimForm">
+
+            <!-- STEP 1 -->
+            <div class="step active">
+                <h3>Personal Information</h3>
+                <input type="text" placeholder="Full Name" required>
+                <input type="tel" placeholder="Mobile Number" required>
+                <input type="email" placeholder="Email Address" required>
+                <textarea placeholder="Your Address" required></textarea>
+                <button type="button" class="next">Next</button>
+            </div>
+
+            <!-- STEP 2 -->
+            <div class="step">
+                <h3>Item Details</h3>
+                <input type="text" placeholder="Item ID" required>
+                <input type="text" placeholder="Item Name" required>
+                <input type="text" placeholder="Category (Bag, Mobile, ID Card...)" required>
+                <input type="text" placeholder="Color" required>
+                <input type="text" placeholder="Brand" required>
+                <input type="date" required>
+                <input type="text" placeholder="Location Lost" required>
+                <div class="btn-group">
+                    <button type="button" class="prev">Previous</button>
+                    <button type="button" class="next">Next</button>
+                </div>
+            </div>
+
+            <!-- STEP 3 -->
+            <div class="step">
+                <h3>Proof of Ownership</h3>
+                <input type="text" placeholder="Unique Identification Mark" required>
+                <textarea placeholder="Detailed Description" required></textarea>
+                <input type="file">
+                <textarea placeholder="Additional Information"></textarea>
+                <div class="btn-group">
+                    <button type="button" class="prev">Previous</button>
+                    <button type="submit">Submit Claim</button>
+                </div>
+            </div>
+
+        </form>
+    </div>
+</div>
+
+<script src="claim.js"></script>
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Contact Us</title>
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <link rel="stylesheet" href="contact.css">
+</head>
+<body>
+
+    <div class="overlay">
+        <div class="form-container">
+            <h1><i class="fa-solid fa-address-book"></i> Contact Us</h1>
+            <p>Feel free to reach out to us anytime.</p>
+
+            <form id="contactForm">
+
+                <div class="input-group">
+                    <i class="fa-solid fa-user"></i>
+                    <input type="text" id="cname" placeholder="Your Name" required>
+                </div>
+
+                <div class="input-group">
+                    <i class="fa-solid fa-envelope"></i>
+                    <input type="email" id="cemail" placeholder="Your Email" required>
+                </div>
+
+                <div class="input-group">
+                    <i class="fa-solid fa-phone"></i>
+                    <input type="tel" id="cphone" placeholder="Your Phone" required>
+                </div>
+
+                <div class="input-group">
+                    <i class="fa-solid fa-pen"></i>
+                    <textarea id="cmessage" rows="4" placeholder="Your Message" required></textarea>
+                </div>
+
+                <button type="submit">Send Message</button>
+            </form>
+
+            <div id="contactSuccess"></div>
+        </div>
+    </div>
+
+    <script src="contact.js"></script>
+</body>
+</html>

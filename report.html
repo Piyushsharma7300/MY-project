@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Report Lost / Found Item</title>
+    <link rel="stylesheet" href="report.css">
+</head>
+<body>
+
+<div class="wrapper">
+    <div class="form-box">
+        <h2>Report Lost / Found Item</h2>
+
+        <div class="progress-bar">
+            <div class="progress"></div>
+        </div>
+
+        <form id="reportForm">
+
+            <!-- STEP 1 -->
+            <div class="step active">
+                <h3>Reporter Details</h3>
+
+                <select required>
+                    <option value="">Report Type</option>
+                    <option>Lost Item</option>
+                    <option>Found Item</option>
+                </select>
+
+                <input type="text" placeholder="Full Name" required>
+                <input type="tel" placeholder="Mobile Number" required>
+                <input type="email" placeholder="Email Address" required>
+
+                <button type="button" class="next">Next</button>
+            </div>
+
+            <!-- STEP 2 -->
+            <div class="step">
+                <h3>Item Details</h3>
+
+                <input type="text" placeholder="Item Name" required>
+                <input type="text" placeholder="Category" required>
+                <input type="text" placeholder="Brand">
+                <input type="text" placeholder="Color" required>
+                <input type="date" required>
+                <input type="text" placeholder="Location Lost / Found" required>
+                <textarea placeholder="Item Description" required></textarea>
+
+                <div class="btn-group">
+                    <button type="button" class="prev">Previous</button>
+                    <button type="button" class="next">Next</button>
+                </div>
+            </div>
+
+            <!-- STEP 3 -->
+            <div class="step">
+                <h3>Additional Information</h3>
+
+                <input type="text" placeholder="Unique Identification Mark" required>
+                <input type="text" placeholder="Reward (optional)">
+                <input type="file">
+                <textarea placeholder="Additional Notes"></textarea>
+
+                <div class="btn-group">
+                    <button type="button" class="prev">Previous</button>
+                    <button type="submit">Submit Report</button>
+                </div>
+            </div>
+
+        </form>
+    </div>
+</div>
+
+<script src="report.js"></script>
+</body>
+</html>
